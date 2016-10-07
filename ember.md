@@ -219,6 +219,17 @@ app
     serializer.js
 ```
 
+### Boolean properties
+
+Boolean properties should start with "is" or "has".
+
+```javascript
+// googd
+isShowingNavBar: Ember.computed.bool('currentUser')
+
+//bad
+showNavBar: Ember.computed.bool('currentUser')
+```
 ## Models
 
 ### Organization
