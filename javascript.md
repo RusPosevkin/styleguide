@@ -268,8 +268,7 @@ function isItLunchTimeYet(time) {
 }
 ```
 
-+ Use [YUIDoc](http://yui.github.io/yuidoc/syntax/index.html) comments for
-  documenting functions.
++ Use [JSDoc](http://usejsdoc.org) comments for documenting functions.
 
 + Use `//` for non-documenting comments (both single and multiline).
 
@@ -675,8 +674,8 @@ const foo = new Array(16);
 + Use `push` to add an item to an array.
 
 ```javascript
-const foo = [];
-const { length } = foo;
+let foo = [];
+let { length } = foo;
 
 // good
 foo.push('bar');

@@ -289,17 +289,6 @@ export default Model.extend({
 
 ## Controllers
 
-### Define query params first
-
-For consistency and ease of discover, list your query params first in
-your controller. These should be listed above default values.
-
-### Do not use ObjectController or ArrayController
-
-ObjectController is presently deprecated, and ArrayController will be as
-well. Controllers are not going to be used in Ember 2.0, so by using
-`Controller`, you will make it easier to migrate to 2.0.
-
 ### Alias your model
 
 It provides a cleaner code to name your model `user` if it is a user. It
@@ -308,16 +297,11 @@ components
 
 ```javascript
 export default Controller.extend({
-  user: alias('model')
+  partner: alias('model.partner')
 });
 ```
 
 ## Templates
-
-### Do not use partials
-
-Always use components. Partials share scope with the parent view, use
-components will provide a consistent scope.
 
 ### Use block syntax
 
